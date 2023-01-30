@@ -5,7 +5,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
-        <div className='pb-2 shadow sticky'>
+        <div className='pb-2 shadow sticky mb-3'>
         <Navbar/>
         </div>
         {children}</body>

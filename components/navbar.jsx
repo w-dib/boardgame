@@ -1,15 +1,17 @@
 export default function Navbar() {
 
-  const [search, setSearch] = useState('');
+  // const [search, setSearch] = useState('');
 
-  const handleChange = (e) => {
-    e.preventDefault();
-    setSearch(e.target.value);}
+  // const handleChange = (e) => {
+  //   e.preventDefault();
+  //   setSearch(e.target.value);}
 
 
   return (
     <div className="w-4/5 md:w-1/2 mx-auto mt-3">
-<form onSubmit={handleSubmit}>   
+<form 
+// onSubmit={handleSubmit}
+>   
     <label for="default-search" className="mb-2 text-sm font-medium text-gray-900 sr-only">Search</label>
     <div className="relative">
         <div className="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
