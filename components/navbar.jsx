@@ -1,6 +1,6 @@
 'use client'
 import React, { useState } from 'react';
-export default async function Navbar({onSearch}) {
+export default function Navbar({onSearch}) {
 
   const [query, setQuery] = useState('');
 

@@ -1,7 +1,8 @@
 'use client'
 import Boardgame from '@/components/Boardgame';
-import React, { useState } from 'react';
-export default async function Navbar({onSearch}) {
+import Navbar from '@/components/Navbar';
+import { useState, useEffect } from 'react';
+export default function Home() {
 
 const [searchResult, setSearchResult] = useState('');
 const [res, setRes] = useState({ games: [] });
@@ -25,8 +26,10 @@ useEffect(() => {
 }, [searchResult]);
 
 return (
-  <main>
+  <main>        <div className='pb-2 shadow sticky top-0 left-0 right-0 mb-3 z-40 bg-white'>
     <Navbar onSearch={handleSearch} />
+
+  </div>
     <div className="grid grid-cols-fluid gap-16">
       {res.games.map((game) => (
         <Boardgame
