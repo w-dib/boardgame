@@ -11,6 +11,7 @@ const handleSearch = (result) => {
   setSearchResult(result);
 };
 
+
 const fetchData = async () => {
   if (searchResult) {
     const data = await fetch(
